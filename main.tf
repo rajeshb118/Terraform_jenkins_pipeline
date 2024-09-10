@@ -42,14 +42,14 @@ resource "aws_instance" "Mumbai" {
 }
 
 # Create EC2 instances in us-west-1
-resource "aws_instance" "N.California" {
+resource "aws_instance" "Ncalifornia" {
   provider = aws.north-1
 
   ami           = "ami-025258b26b492aec6"  # Example AMI, replace with a valid one
   instance_type = "t3.micro"
 
   tags = {
-    Name = "n.california"
+    Name = "Ncalifornia"
   }
 }
 
