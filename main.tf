@@ -15,7 +15,7 @@ provider "aws" {
   profile = "default"
 }
 
-# Provider-2 for eu-north-1
+# Provider-2 for us-west-1
 provider "aws" {
   region = "us-west-1"
   alias = "west-1"
@@ -41,15 +41,15 @@ resource "aws_instance" "Mumbai" {
   }
 }
 
-# Create EC2 instances in eu-north-1
-resource "aws_instance" "stockholm" {
+# Create EC2 instances in us-west-1
+resource "aws_instance" "N.California" {
   provider = aws.north-1
 
-  ami           = "ami-0249211c9916306f8"  # Example AMI, replace with a valid one
+  ami           = "ami-025258b26b492aec6"  # Example AMI, replace with a valid one
   instance_type = "t3.micro"
 
   tags = {
-    Name = "stockholm"
+    Name = "n.california"
   }
 }
 
