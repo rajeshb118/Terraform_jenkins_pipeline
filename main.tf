@@ -17,8 +17,8 @@ provider "aws" {
 
 # Provider-2 for eu-north-1
 provider "aws" {
-  region = "eu-north-1"
-  alias = "north-1"
+  region = "es-west-1"
+  alias = "west-1"
   profile = "default"
 }
 
