@@ -27,11 +27,4 @@ resource "aws_instance" "Mumbai" {
   }
 }
 
-resource "aws_s3_bucket" "thunithovaikarabucket" {
-  bucket = "thunithovaikarabucket"
-  acl    = "private"
 
-  tags = {
-    Name        = "thunithovaikarabucket"
-  }
-}
